@@ -12,25 +12,25 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "sCrypteR.Dev"
 title_separator          : "-"
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Tehran Guluzade"
-description              : "Cloud, DevOps and Automation"
-url                      : https://scrypter.dev/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "DevOps Specialist"
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/images/avatar/scrypter.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/avatar.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  # receiver                : "https://"
-  provider               : "default" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -62,6 +62,8 @@ atom_feed:
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : lunr # lunr (default), algolia, google
+lunr:
+  search_within_pages    : "true" # true, false (default)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -71,14 +73,15 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : 'cGasAvSObD3wRVyYrMyPEAIyGp3TeCL8DS69pC9dcwQ' #https://www.google.com/webmasters/tools/
-bing_site_verification   : '41C4B698DCF8E8CC8310802951961BF0' #https://www.bing.com/webmaster/configure/verify/ownership/
-yandex_site_verification :
+google_site_verification :
+bing_site_verification   :
 naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : tehranguluzade
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -93,16 +96,16 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "UA-23373830-3"
+    tracking_id          :
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
   name             : "Tehran Guluzade"
-  avatar           : '/images/avatar/avatar.jpg' # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "DevOps Specialist"
   location         : "Baku, Azerbaijan"
   email            :
@@ -113,27 +116,18 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://scrypter.dev/"
-    # - label: "Microsoft MVP"
-    #   icon: "fab fa-fw fa-microsoft"
-    #   url: ""
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/tehranguluzade"
-#    - label: "Facebook"
-#      icon: "fab fa-fw fa-facebook-square"
+      url: "https://twitter.com/tehranguluzade/"
+    #- label: "Facebook"
+    #  icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tehran"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/tehran.guluzade/"
-    - label: "RSS"
-      icon: "fas fa-fw fa-rss-square"
-      url: "https://feeds.feedburner.com/tehran.guluzade"
-#    - label: "Get me a coffee :)"
-#      icon: "fas fa-coffee"
-#      url: "https://github.com/sponsors/tehran.guluzade"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -146,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/tehran.guluzade"
+      # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -213,7 +207,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  #enable_coderay: false
+  #enable_coderay: true
 
 
 # Sass/SCSS
@@ -223,9 +217,8 @@ sass:
 
 
 # Outputting
-#permalink: /:categories/:year/:month/:title.html #/:categories/:title/
-#permalink: /:year/:month/:title.html # /:categories/:title/
-paginate: 10 # amount of posts to show
+#permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Asia/Baku" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -294,24 +287,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: # true
       share: true
       related: true
-
-##########
-# CUSTOM #
-##########
-# post with future date won't show'
-future: true
-
-# Show date on main page
-custom:
-  landingpage:
-    publisheddate: true
-    postlogo: false
-  post:
-    authorname: false
-    publisheddate: true
-    edit: true
-  link:
-    rssfeed: "http://feeds.feedburner.com/tehran.guluzade"
