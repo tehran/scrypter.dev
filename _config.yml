@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -30,9 +30,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 words_per_minute         : 200
 comments:
   # receiver                : "https://"
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "default" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # lazywinadmin # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -72,7 +72,7 @@ google:
   instant_search         : # false (default), true
 # SEO Related
 google_site_verification : 'cGasAvSObD3wRVyYrMyPEAIyGp3TeCL8DS69pC9dcwQ' #https://www.google.com/webmasters/tools/
-bing_site_verification   : '41C4B698DCF8E8CC8310802951961BF0' #https://www.bing.com/webmaster/configure/verify/ownership/?url=http://lazywinadmin.github.io/
+bing_site_verification   : '41C4B698DCF8E8CC8310802951961BF0' #https://www.bing.com/webmaster/configure/verify/ownership/
 yandex_site_verification :
 naver_site_verification  :
 
@@ -223,8 +223,8 @@ sass:
 
 
 # Outputting
-# permalink: /:categories/:year/:month/:title.html #/:categories/:title/
-permalink: /:year/:month/:title.html # /:categories/:title/
+#permalink: /:categories/:year/:month/:title.html #/:categories/:title/
+#permalink: /:year/:month/:title.html # /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Asia/Baku" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -314,4 +314,4 @@ custom:
     publisheddate: true
     edit: true
   link:
-    rssfeed: "http://feeds.feedburner.com/lazywinadmin"
+    rssfeed: "http://feeds.feedburner.com/tehran.guluzade"
