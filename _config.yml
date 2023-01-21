@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Tehran Guluzade - Personal Blog"
+title                    : "sCrypteR.Dev"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Tehran Guluzade"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Tehran Guluzade"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I’m currently working as DevOps Specialist"
+  bio              : "DevOps Specialist"
   location         : "Baku, Azerbaijan"
   email            :
   links:
@@ -217,7 +217,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+#permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Asia/Baku" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
