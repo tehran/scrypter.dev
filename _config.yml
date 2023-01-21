@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Tehran Guluzade"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "I’m currently working as DevOps Specialist"
+  location         : "Baku, Azerbaijan"
   email            :
   links:
     - label: "Email"
@@ -207,7 +207,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: true
+  #enable_coderay: true
 
 
 # Sass/SCSS
